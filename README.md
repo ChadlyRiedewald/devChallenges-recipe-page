@@ -37,7 +37,6 @@
 
 ## Overview
 
-![screenshot](https://chadlyriedewald.github.io/devChallenges-recipe-page/assets/desktop.png)
 ![screenshot](https://chadlyriedewald.github.io/devChallenges-recipe-page/assets/mobile.png)
 
 Was a fun project to make. I didn't had any difficulties.
