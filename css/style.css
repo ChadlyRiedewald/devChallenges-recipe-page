@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,500&family=Playfair+Display:ital,wght@0,700;1,400&display=swap");
+/* TABLE OF CONTENT */
+/* ==||    1. GENERAL STYLES    ||== */
+/* ==||    2. UTILITIES         ||== */
+/* ==||    3. CONTENT           ||== */
+/* ==||    4. MEDIA QUERIES     ||== */
+/* ==========||        1. GENERAL STYLES        ||========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+}
+
+.page {
+  width: 70vw;
+  height: 100vh;
+  justify-content: space-between;
+  margin: auto;
+}
+
+/* ==========||        2. UTILITIES             ||========== */
+.flex {
+  display: flex;
+}
+.flex--column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-center {
+  margin: auto;
+}
+
+.regular {
+  font-weight: 400;
+}
+
+.medium {
+  font-weight: 500;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.m16 {
+  margin-top: 1.6rem;
+  margin-bottom: 2.4rem;
+}
+
+/* ==========||        3. CONTENT               ||========== */
+/* ==========||         3.1 HEADER              ||========== */
+.header {
+  margin-top: 6rem;
+  margin-bottom: 1.2rem;
+}
+.header__title {
+  font-family: "Playfair Display", serif;
+  font-size: 4.8rem;
+}
+
+/* ==========||         3.2 MAIN CONTENT        ||========== */
+.main-content {
+  width: 70vw;
+  margin: auto;
+}
+
+/* ==========||           3.2.1 CAPTION         ||========== */
+.caption {
+  gap: 1.2rem;
+}
+.caption__svg {
+  margin-top: 0.5rem;
+  align-self: flex-start;
+}
+.caption__body {
+  color: #4f4f4f;
+  font-size: 1.4rem;
+  width: 62ch;
+}
+
+/* ==========||           3.2.2 PICTURE         ||========== */
+.picture {
+  margin: 4.8rem 0;
+}
+.picture__img {
+  width: 100%;
+}
+
+/* ==========||           3.2.3 RECIPE          ||========== */
+.recipe {
+  justify-content: space-between;
+  gap: 3rem;
+  width: 70vw;
+  margin: auto;
+}
+
+.recipe-main {
+  flex: 0 0 50%;
+}
+.recipe-main__heading, .recipe-main__caption {
+  color: #333;
+  font-family: "Playfair Display", serif;
+  font-size: 2.4rem;
+}
+.recipe-main__caption {
+  font-size: 1.8rem;
+  font-style: italic;
+  margin: 3.2rem 0;
+}
+.recipe-main__source {
+  margin: 6rem 0 9rem 0;
+  font-size: 1.6rem;
+  color: #bdbdbd;
+}
+.recipe-main__source__link {
+  color: #bdbdbd;
+  text-decoration: none;
+}
+.recipe-main__ingredients {
+  gap: 1.8rem;
+  margin-bottom: 1.2rem;
+}
+.recipe-main__ingredients:last-child {
+  margin-bottom: 0;
+}
+.recipe-main__ingredients__body {
+  font-size: 1.6rem;
+}
+.recipe-main__ingredients__checkbox {
+  transform: scale(1.5);
+  margin-top: 0.4rem;
+}
+.recipe-main__instructions {
+  gap: 1.8rem;
+  align-items: flex-start;
+}
+.recipe-main__instructions__step {
+  font-family: "Playfair Display", serif;
+  line-height: 1.4;
+  text-align: center;
+  min-width: 3.6rem;
+  min-height: 3.6rem;
+  font-size: 2.2rem;
+  color: #fff;
+  border-radius: 0.6rem;
+  background-color: #f2994a;
+}
+.recipe-main__instructions__body {
+  font-size: 1.6rem;
+  width: 50ch, 60%;
+}
+
+.test {
+  gap: 3.6rem;
+  align-items: flex-start;
+}
+
+/* ==========||           3.2.4 SIDEBAR         ||========== */
+.recipe-side {
+  min-width: 25%;
+  gap: 3.6rem;
+  height: 50%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  padding: 4vh 4.3vw;
+  border-radius: 1.2rem;
+}
+.recipe-side__card {
+  gap: 1.4rem;
+  align-items: center;
+}
+.recipe-side__card__text {
+  gap: 0.4rem;
+}
+.recipe-side__card__heading {
+  color: #bdbdbd;
+  text-transform: uppercase;
+}
+.recipe-side__card__info {
+  color: #333;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+.recipe-side__card__info--orange {
+  color: #f2994a;
+}
+.recipe-side__card__svg--orange {
+  fill: #f2994a;
+}
+
+/* ==========||         3.3 FOOTER              ||========== */
+.footer__text {
+  color: #a9a9a9;
+  font-size: 1.4rem;
+  margin: 0 auto 2.4rem auto;
+  text-align: center;
+  width: 100%;
+}
+.footer__link {
+  color: #a9a9a9;
+  text-decoration: none;
+}
+
+/* ==========||        4. MEDIA QUERIES         ||========== */
