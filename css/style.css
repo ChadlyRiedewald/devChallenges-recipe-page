@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  line-height: 2.5rem;
 }
 
 html {
@@ -79,7 +80,7 @@ html {
 /* ==========||         3.1 HEADER              ||========== */
 .header {
   margin-top: 6rem;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.4rem;
 }
 .header__title {
   font-family: "Playfair Display", serif;
@@ -87,11 +88,6 @@ html {
 }
 
 /* ==========||         3.2 MAIN CONTENT        ||========== */
-.main-content {
-  width: 70vw;
-  margin: auto;
-}
-
 /* ==========||           3.2.1 CAPTION         ||========== */
 .caption {
   gap: 1.2rem;
@@ -104,6 +100,7 @@ html {
   color: #4f4f4f;
   font-size: 1.4rem;
   width: 62ch;
+  line-height: 1.7rem;
 }
 
 /* ==========||           3.2.2 PICTURE         ||========== */
@@ -116,10 +113,9 @@ html {
 
 /* ==========||           3.2.3 RECIPE          ||========== */
 .recipe {
+  display: flex;
   justify-content: space-between;
   gap: 3rem;
-  width: 70vw;
-  margin: auto;
 }
 
 .recipe-main {
@@ -176,6 +172,7 @@ html {
 .recipe-main__instructions__body {
   font-size: 1.6rem;
   width: 50ch, 60%;
+  line-height: 2.4rem;
 }
 
 .test {
@@ -185,6 +182,8 @@ html {
 
 /* ==========||           3.2.4 SIDEBAR         ||========== */
 .recipe-side {
+  display: flex;
+  flex-direction: column;
   min-width: 25%;
   gap: 3.6rem;
   height: 50%;
@@ -202,11 +201,13 @@ html {
 .recipe-side__card__heading {
   color: #bdbdbd;
   text-transform: uppercase;
+  line-height: 1.2rem;
 }
 .recipe-side__card__info {
   color: #333;
   font-size: 1.4rem;
   font-weight: 500;
+  line-height: 1.7rem;
 }
 .recipe-side__card__info--orange {
   color: #f2994a;
@@ -229,3 +230,117 @@ html {
 }
 
 /* ==========||        4. MEDIA QUERIES         ||========== */
+@media (max-width: 830px) {
+  /* ==||    1. GENERAL STYLES    ||== */
+  .page {
+    width: 95vw;
+    height: 100vh;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  .wrapper {
+    gap: 2.4rem;
+  }
+
+  /* ==||    3. CONTENT           ||== */
+  /* ==||     3.1 HEADER          ||== */
+  .header {
+    margin-top: 3.2rem;
+  }
+  .header__title {
+    font-size: 2.4rem;
+  }
+
+  /* ==||       3.2.1 CAPTION     ||== */
+  .caption {
+    justify-content: flex-start;
+  }
+  .caption__body {
+    font-size: 1.2rem;
+    width: 40ch;
+    line-height: 1.4rem;
+  }
+
+  /* ==||       3.2.2 PICTURE     ||== */
+  .picture {
+    margin: 1.6rem 0;
+  }
+  .picture__img {
+    width: 100%;
+  }
+
+  /* ==||       3.2.3 RECIPE      ||== */
+  .recipe {
+    flex-direction: column;
+    gap: 0;
+    margin: auto;
+  }
+
+  .recipe-main {
+    flex: 0 0 100%;
+    order: 2;
+    margin-top: 0.8rem;
+  }
+  .recipe-main__heading, .recipe-main__caption {
+    font-size: 1.8rem;
+  }
+  .recipe-main__caption {
+    font-size: 1.6rem;
+    margin: 1.6rem 0;
+  }
+  .recipe-main__source {
+    margin: 2.4rem 0 6.4rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .recipe-main__ingredients {
+    gap: 1.2rem;
+  }
+  .recipe-main__ingredients__body {
+    font-size: 1.4rem;
+  }
+  .recipe-main__instructions {
+    gap: 1.2rem;
+  }
+  .recipe-main__instructions__body {
+    font-size: 1.6rem;
+    width: 50ch, 60%;
+  }
+
+  /* ==||       3.2.4 SIDEBAR     ||== */
+  .recipe-side {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    gap: 0;
+    box-shadow: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  .recipe-side__card {
+    gap: 0.8rem;
+    align-items: center;
+    margin-bottom: 2rem;
+    margin-right: 4rem;
+  }
+  .recipe-side__card--first {
+    flex: 0 0 100%;
+  }
+  .recipe-side__card__text {
+    gap: 0.1rem;
+  }
+  .recipe-side__card__heading {
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+  .recipe-side__card__info {
+    font-size: 1rem;
+    line-height: 1.2rem;
+  }
+  .recipe-side__card__svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
